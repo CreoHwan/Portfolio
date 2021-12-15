@@ -110,6 +110,7 @@ p {
 #navbar.navbar--dark {
     background-color: rgb(219, 187, 117);
     padding: 8px;
+    z-index: 1;
 }
 
 .navbar__logo {
