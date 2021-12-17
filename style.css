@@ -95,7 +95,13 @@ p {
     margin: 4x 0px;
 }
 
-/* Navbar */
+.home__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    
+}
+
 #navbar {
     position: fixed;
     width: 100%;
@@ -187,6 +193,7 @@ p {
     padding: 50px;
     text-align: center;
     margin: auto;
+    padding-top: 100px;
 }
 
 .section__container {

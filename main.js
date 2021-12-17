@@ -96,4 +96,25 @@ function scrollIntoView(selector) {
   scrollTo.scrollIntoView({ behavior: 'smooth'})
 }
 
+// Typing effect
+const content = "by indtroducing 3 people who I met the most during a month";
+
+const text1 = document.querySelector('.home__description');
+const text2 = document.querySelector('.home__description');
+
+let i = 0;
+function typing1(){
+    if (i < content.length) {
+    let txt = content.charAt(i);
+    text1.innerHTML += txt;
+    i++;
+    }
+}
+setInterval(typing1, 100)
+
+
+
+
+
+
 
