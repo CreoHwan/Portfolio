@@ -97,7 +97,7 @@ function scrollIntoView(selector) {
 }
 
 // Typing effect
-const content = "by indtroducing 3 people who I met the most during a month";
+const content = "by introducing 3 people who I met the most during a month";
 
 const text1 = document.querySelector('.home__description');
 const text2 = document.querySelector('.home__description');

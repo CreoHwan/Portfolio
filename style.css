@@ -204,6 +204,10 @@ p {
 /* About */
 .major {  flex-basis: 33.3%;}
 
+.about__video {
+    margin-top: 30px;
+}
+
 .about__majors {
     display: flex;
     justify-content: space-between;
@@ -224,7 +228,7 @@ p {
 
 .major__icon:hover i {
     color: var(--color-pink);
-    transform: rotate(-30deg) scale(1.1);
+    transform: rotate(-15deg) scale(1.1);
 }
 
 .major__icon i {
@@ -242,6 +246,7 @@ p {
 .job {
     display: flex;
     align-items: center;
+
 }
 
 .job__description {
@@ -561,7 +566,6 @@ p {
         padding: 16px;
         padding-top: 45px;
     }
-    
 
     .about__majors {
         flex-direction: column;
