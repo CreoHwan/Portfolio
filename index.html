@@ -1,143 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>JungHwan's Portfolio</title>
-        <meta name="description" content="Portfolio for creative engineer student"/>
-        <meta name="author" content="JungHwan"/>
-        <link rel="icon" type="image/png" href="imgs/favicon.png"/>
-        <script
-            src="https://kit.fontawesome.com/cd0b1d5b6d.js"
-            crossorigin="anonymous"
-        ></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link 
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" 
-            rel="stylesheet"
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JungHwan's Portfolio</title>
+    <meta name="description" content="Portfolio for creative engineer student"/>
+    <meta name="author" content="JungHwan"/>
+    <link rel="icon" type="image/png" href="imgs/favicon.png"/>
+    <script
+      src="https://kit.fontawesome.com/cd0b1d5b6d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" 
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="fab fa-apple"></i>
+        <a href="#">JungHwan</a>
+      </div>
+
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <!-- <li class="navbar__menu__item" data-link="#skills">Skills</li> -->
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+      
+
+      <!-- Toogle button -->
+      <button class="navbar__toggle-btn">
+          <i class="fas fa-hamburger"></i>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img 
+        src="imgs/profile.png"
+        alt="JungHwan's profile photo" 
+        class="home__avatar"
         />
-        <link rel="stylesheet" href="style.css">
-        <script src="main.js" defer></script>
-    </head>
-    <body>
-        <!-- Navbar -->
-        <nav id="navbar">
-            <div class="navbar__logo">
-                <i class="fab fa-apple"></i>
-                <a href="#">JungHwan</a>
-            </div>
+        <h1 class="home__title">Hello, <br />I'm JungHwan</h1>
+        <h2 class="home__description">I'm interseted in<br /></h2>
+        <button class="home__contact">Contact me</button>
+      </div>
+    </section>
 
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item active" data-link="#home">Home</li>
-                <li class="navbar__menu__item" data-link="#about">About</li>
-                <!-- <li class="navbar__menu__item" data-link="#skills">Skills</li> -->
-                <li class="navbar__menu__item" data-link="#work">My work</li>
-                <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
-                <li class="navbar__menu__item" data-link="#contact">Contact</li>
-            </ul>
-            
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <h2>Click Video or CV </h2>
+      <div class="about__video">
+        <button class="about__contact">                
+          <a href="https://youtu.be/fnG5AOHTTwQ" target="blank">
+            <img src="imgs/projects/youtube.png" alt="People" class="about__video__img">
+          </a>
+        </button>
+      </div>
 
-            <!-- Toogle button -->
-            <button class="navbar__toggle-btn">
-                <i class="fas fa-hamburger"></i>
-
-            </button>
-
-        </nav>
-
-        <!-- Home -->
-        <section id="home">
-            <div class="home__container">
-                <img 
-                src="imgs/profile.png"
-                alt="JungHwan's profile photo" 
-                class="home__avatar"
-                />
-                <h1 class="home__title">Hello, <br />I'm JungHwan</h1>
-                <h2 class="home__description">I'm interseted in<br /></h2>
-                
-
-                <button class="home__contact">Contact me</button>
-            </div>
-        </section>
-
-        <!-- About -->
-        <section id="about" class="section section__container">
-            <h1>About me</h1>
-            <!-- 
-            <div class=about__video>
-                <a href="https://www.youtube.com/">
-                    <button clss=about__vid0__btn>
-                        <img src="imgs/projectsimg/project1.png" alt="JungHwan's video" class="about__video__img"/>
-                    </button>
-                </a>
-            </div>
-            -->
-            <div class=about__video>
-                <iframe width="850" height="550" src="https://www.youtube.com/embed/fnG5AOHTTwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <div class="about__majors">
-                <div class="major">
-                    <div class="major__icon">
-                        <i class="fab fa-apple"></i>
-                    </div>
-                    <h2 class="major__title">Entrepreneur</h2>
-                    <div class="major__description">
-                        Startup, Business, Marketing
-                    </div>
-                </div>
-                <div class="major">
-                    <div class="major__icon">
-                        <i class="fas fa-laptop"></i>
-                    </div>
-                    <h2 class="major__title">Developer</h2>
-                    <div class="major__description">
-                        Python, HTML, CSS, 
-                        <br /> JavaScript, GIT
-                    </div>
-                </div>
-                <div class="major">
-                    <div class="major__icon">
-                        <i class="fas fa-book-open"></i>
-                    </div>
-                    <h2 class="major__title">Writer</h2>
-                    <div class="major__description">
-                        Critic, Poet
-                    </div>
-                </div>
-            </div>
-            <div class="about__jobs">
-                <div class="job">
-                    <img 
-                        src="imgs/gist.png"
-                        alt="gist" 
-                        class="job__logo"
-                    />
-                    <div class="job__description">
-                        <p class="job__name">GIST student(Major in School of Electrical Engineering and Computer Science)</p>
-                        <p class="job__period">Since March, 2019</p>
-                    </div>
-                </div>
-                <!-- 
-                <div class="job">
-                    <img 
-                        src="imgs/gist.png"
-                        alt="gist" 
-                        class="job__logo"
-                    />
-                    <div class="job__description">
-                        <p class="job__name">GIST student(Major in School of Electrical Engineering and Computer Science)</p>
-                        <p class="job__period">Since March, 2019</p>
-                    </div>
-                </div>
-                -->
+      <div class="about__cv">
+        <button class="about__contact">
+          <a href="https://drive.google.com/file/d/1LAn1aJSNCYmWmo6CyFmJ3u29uU9fXx4M/view?usp=sharing" target="blank">
+            <img src="imgs/projects/cv.png" alt="People" class="about__cv__img">
+          </a>
+        </button>
+      </div>
+      <!-- 
+      <div class=about__video>
+        <iframe width="850" height="550" src="https://www.youtube.com/embed/fnG5AOHTTwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      -->
 
 
-            </div>
-        </section>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+              <i class="fab fa-apple"></i>
+          </div>
+          <h2 class="major__title">Entrepreneur</h2>
+          <div class="major__description">
+              Startup, Business, Marketing
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+              <i class="fas fa-laptop"></i>
+          </div>
+          <h2 class="major__title">Developer</h2>
+          <div class="major__description">
+              Python, HTML, CSS, 
+              <br /> JavaScript, GIT
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+              <i class="fas fa-book-open"></i>
+          </div>
+          <h2 class="major__title">Writer</h2>
+          <div class="major__description">
+              Critic, Poet
+          </div>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img 
+              src="imgs/gist.png"
+              alt="gist" 
+              class="job__logo"
+          />
+          <div class="job__description">
+              <p class="job__name">GIST student(Major in School of Electrical Engineering and Computer Science)</p>
+              <p class="job__period">Since March, 2019</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
         <!-- Skills -->
 <!--
@@ -231,253 +222,243 @@
 -->
         
 
-        <!-- Work -->
-        <section id="work" class="section">
-            <div class="section__container">
-                <h1>My Work</h1>
-                <h2>Projects</br>( Click each image and see details )</h2>
-                <div class="work__categories">
-                    <button class="category__btn selected" data-filter="*">All <span class="category__count">12</span></button>
-                    <button class="category__btn" data-filter="developer">Entrepreneur <span class="category__count">2</span></button>
-                    <button class="category__btn" data-filter="business">Developer <span class="category__count">4</span></button>
-                    <button class="category__btn" data-filter="writer">Writer <span class="category__count">4   </span></button>
-                </div>
+    <!-- Work -->
+    <section id="work" class="section">
+      <div class="section__container">
+        <h1>My Work</h1>
+        <h2>Projects</br>( Click each image and see details )</h2>
+        <div class="work__categories">
+          <button class="category__btn selected" data-filter="*">All <span class="category__count">11</span></button>
+          <button class="category__btn" data-filter="developer">Entrepreneur <span class="category__count">2</span></button>
+          <button class="category__btn" data-filter="business">Developer <span class="category__count">5</span></button>
+          <button class="category__btn" data-filter="writer">Writer <span class="category__count">4   </span></button>
+        </div>
     
-                <div class="work__projects">
-                    <!-- Entrepreneur -->
-                    <a 
-                        href="https://docs.google.com/presentation/d/11bPnbTM3oMvR0CLGwm_XkUNS8cjMvTx4/edit?usp=sharing&ouid=105838946511457830550&rtpof=true&sd=true" 
-                        class="project"
-                        target="blank"
-                        data-type="developer"
-                    >
-                        <img class="project__img" src="./imgs/projects/1.jpg" alt="portfolio">
-                        <div class="project__description">
-                            <h3>Understaing of Metaverse and Future Business</h3>
-                            <span>Feedback and fitting service for fashion through Metaverse</span>
-                        </div>
-                    </a>
-
-                    <a 
-                        href="https://docs.google.com/presentation/d/1cLQrGRz7GcttNGQfI7dr4B8Tp4F3S0eB/edit?usp=sharing&ouid=105838946511457830550&rtpof=true&sd=true"
-                        target="blank"
-                        class="project"
-                        data-type="developer"
-                    >
-                        <img class="project__img" src="./imgs/projects/2.png" alt="portfolio">
-                        <div class="project__description">
-                            <h3>Business Strategy and Venturing</h3>
-                            <span>Extinguishing fire using drone and extinguisher ball</span>
-                        </div>
-                    </a>
-
-                    <!-- Developer -->
-                    <a 
-                        href="https://github.com/CreoHwan" 
-                        class="project"
-                        target="blank"
-                        data-type="business"
-                    >
-                        <img class="project__img" src="./imgs/projects/Portfolio.png" alt="portfolio">
-                        <div class="project__description">
-                            <h3>Portfolio Web Site</h3>
-                            <span>My portfolio website coding with HTML, CSS, and JavaScript</span>
-                        </div>
-                    </a>
-    
-                    <a 
-                        href="https://github.com/CreoHwan" 
-                        class="project"
-                        target="blank"
-                        data-type="business"
-                    >
-                        <img class="project__img" src="./imgs/projects/crawling.png" alt="crawling">
-                        <div class="project__description">
-                            <h3>Web crawling</h3>
-                            <span>Coding with Python using diverse libraries</span>
-                        </div>
-                    </a>
-    
-                    <a 
-                        href="https://github.com/CreoHwan" 
-                        class="project"
-                        target="blank"
-                        data-type="business"
-                    >
-                        <img class="project__img" src="./imgs/projects/data.png" alt="crawling">
-                        <div class="project__description">
-                            <h3>Data Analysis and Visualization</h3>
-                            <span>Coding with Python using diverse libraries</span>
-                        </div>
-                    </a>
-
-                    <a 
-                        href="https://github.com/CreoHwan" 
-                        class="project"
-                        target="blank"
-                        data-type="business"
-                    >
-                        <img class="project__img" src="./imgs/projects/Deep.png" alt="crawling">
-                        <div class="project__description">
-                            <h3>Deep Learning</h3>
-                            <span>The survival rate of lung cancer surgery patients using TensorFlow</span>
-                        </div>
-                    </a>
-
-                    <!-- Writer part -->
-                    <a 
-                        href="https://www.instagram.com/p/CXVxg_ml-pz/" 
-                        class="project"
-                        target="blank"
-                        data-type="writer"
-                    >
-                    <img class="project__img" src="./imgs/projects/poem4-1.jpg" alt="mobile">
-                    <div class="project__description">
-                        <h3>알츠하이머의 꿈</h3>
-                        <span>4th</span>
-                    </div>
-                    </a>      
-
-                    <a 
-                        href="https://www.instagram.com/p/CQgSPomAHlx/" 
-                        class="project"
-                        target="blank"
-                        data-type="writer"
-                    >
-                    <img class="project__img" src="./imgs/projects/poem3.jpg" alt="mobile">
-                    <div class="project__description">
-                        <h3>달무리</h3>
-                        <span>3rd</span>
-                    </div>
-                    </a>  
-
-                    <a 
-                        href="https://www.instagram.com/p/CL0VjDlAVEI/" 
-                        class="project"
-                        target="blank"
-                        data-type="writer"
-                    >
-                        <img class="project__img" src="./imgs/projects/poem2.jpg" alt="mobile">
-                        <div class="project__description">
-                            <h3>뫼비우스의 띠</h3>
-                            <span>2nd</span>
-                        </div>
-                    </a>
-
-                    <a 
-                        href="https://www.instagram.com/p/CK79zNzAvPl/" 
-                        class="project"
-                        target="blank"
-                        data-type="writer"
-                    >
-                        <img class="project__img" src="./imgs/projects/poem1.jpg" alt="mobile">
-                        <div class="project__description">
-                            <h3>눈망울</h3>
-                            <span>1st</span>
-                        </div>
-                    </a>
-    
-                </div>
+        <div class="work__projects">
+          <!-- Entrepreneur -->
+          <a 
+            href="https://docs.google.com/presentation/d/11bPnbTM3oMvR0CLGwm_XkUNS8cjMvTx4/edit?usp=shouid=105838946511457830550&rtpof=true&sd=true" 
+            class="project"
+            target="blank"
+            data-type="developer"
+          >
+            <img class="project__img" src="./imgs/projects/1.jpg" alt="portfolio">
+            <div class="project__description">
+              <h3>Understaing of Metaverse and Future Business</h3>
+              <span>Feedback and fitting service for fashion through Metaverse</span>
             </div>
-        </section>
-
-        <!-- Testimonials -->
-        <section id="testimonials" class="section">
-            <h1>Testimonials</h1>
-            <h2>Click each paragraph and see full reference.</br> ( If you want to know details about people, click each avatar image )</h2>
-
-            <div class="section__container">
-                <div class="testimonials">
-
-                    <div class="testimonial">
-                        <button>                
-                            <a href="https://language.gist.ac.kr/" target="blank">
-                                <img src="imgs/testimonials/avatar.jpg" alt="People" class="testimonial__avatar">
-                            </a>
-                        </button>
-                        <div class="testimonial__speack-bubble">
-                            <button>                
-                                <a href="https://drive.google.com/file/d/1lqogJIvCGBNgBIhGVPvBvXVGLP1JkDag/view?usp=sharing" target="blank">
-                                    <p>... This shows JungHwan’s reflective nature and his ability to adapt as a situation changes. This kind of deep thinking was in evidence many times during our conversations, when JungHwan would hit right to the core of a complex issue...
-                                    </p>
-                                    <p class="name" ><a href="https://drive.google.com/file/d/1lqogJIvCGBNgBIhGVPvBvXVGLP1JkDag/view?usp=sharing" target="blank">Ms. Bae</a> / GIST</p>
-                                </a>
-                            </button>
-                            
-                        </div>
-                    </div>
-
-                    <div class="testimonial">
-                        <div class="testimonial__speack-bubble">
-                            <button>
-                                <a href="https://drive.google.com/file/d/1xjXCL92f8DAZAe03mGHbfJuYdqxOj8tv/view?usp=sharing" target="blank">
-                                    <p>... 본인에게 무엇이 부족하고 필요한지를 판단하는 통찰력과 스스로 헤쳐나가는 능력, 어떤 분야든지 두려워하지 않고 도전적이고 끈기 있게 공부하는 능력을 갖춘 이정환 학생은 ...</p>
-                                    <p class="name"><a href="https://drive.google.com/file/d/1xjXCL92f8DAZAe03mGHbfJuYdqxOj8tv/view?usp=sharing" target="blank">Ms. Kim</a> / GIST</p>
-                                </a>
-                            </button>
-                        </div>
-                        <button>                
-                            <a href="https://software.gist.ac.kr/software/sub01_04.do" target="blank">
-                                <img src="imgs/testimonials/avatar.jpg" alt="People" class="testimonial__avatar">
-                            </a>
-                        </button>
-                    </div>
-
-                    <div class="testimonial">
-                        <button>                
-                            <a href="https://drive.google.com/file/d/1lqogJIvCGBNgBIhGVPvBvXVGLP1JkDag/view?usp=sharing" target="blank">
-                                <img src="imgs/testimonials/avatar.jpg" alt="People" class="testimonial__avatar">
-                            </a>
-                        </button>
-                        <div class="testimonial__speack-bubble">
-                            <p>GIST English Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius dicta vitae porro fugit dolor facilis quia. Repudiandae obcaecati laudantium sed veniam suscipit. Harum deleniti fugit tempore accusantium minima vel recusandae? ~</p>
-                            <p class="name"><a href="https://software.gist.ac.kr/software/sub01_04.do">Mr. Kang</a> / GIST</p>
-                        </div>
-                    </div>
-
-                    <div class="testimonial">
-                        <div class="testimonial__speack-bubble">
-                            <p>GIST English Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid temporibus necessitatibus amet distinctio omnis cumque. Assumenda, culpa harum fuga sed neque magni eius nulla atque, voluptates vitae quia officia velit? ~</p>
-                            <p class="name"><a href="">Mr. Kim</a> / Major in military</p>
-                        </div>
-                        <button>                
-                            <a href="https://drive.google.com/file/d/1lqogJIvCGBNgBIhGVPvBvXVGLP1JkDag/view?usp=sharing" target="blank">
-                                <img src="imgs/testimonials/avatar.jpg" alt="People" class="testimonial__avatar">
-                            </a>
-                        </button>
-                    </div>
-    
-                </div>
+          </a>
+          <a 
+            href="https://docs.google.com/presentation/d/1cLQrGRz7GcttNGQfI7dr4B8Tp4F3S0eB/edit?usp=sharing&ouid=105838946511457830550&rtpof=true&sd=true"
+            target="blank"
+            class="project"
+            data-type="developer"
+          >
+            <img class="project__img" src="./imgs/projects/2.png" alt="portfolio">
+            <div class="project__description">
+              <h3>Business Strategy and Venturing</h3>
+              <span>Extinguishing fire using drone and extinguisher ball</span>
             </div>
+          </a>
+          <!-- Developer -->
+          <a 
+            href="https://github.com/CreoHwan/Portfolio" 
+            class="project"
+            target="blank"
+            data-type="business"
+          >
+            <img class="project__img" src="./imgs/projects/Portfolio.png" alt="portfolio">
+            <div class="project__description">
+              <h3>Portfolio Web Site</h3>
+              <span>My portfolio website coding with HTML, CSS, and JavaScript</span>
+            </div>
+          </a>
+          <a 
+            href="https://github.com/CreoHwan/Portfolio" 
+            class="project"
+            target="blank"
+            data-type="business"
+          >
+            <img class="project__img" src="./imgs/projects/al.png" alt="portfolio">
+            <div class="project__description">
+              <h3>Algorithm and Datastructure</h3>
+              <span>With Python</span>
+            </div>
+          </a>
+          <a 
+            href="https://github.com/CreoHwan/Web-crawling" 
+            class="project"
+            target="blank"
+            data-type="business"
+          >
+            <img class="project__img" src="./imgs/projects/crawling.png" alt="crawling">
+            <div class="project__description">
+              <h3>Web crawling</h3>
+              <span>Coding with Python using diverse libraries</span>
+            </div>
+          </a>
+          <a 
+            href="https://github.com/CreoHwan" 
+            class="project"
+            target="blank"
+            data-type="business"
+          >
+            <img class="project__img" src="./imgs/projects/data.png" alt="crawling">
+            <div class="project__description">
+              <h3>Data Analysis and Visualization</h3>
+              <span>Coding with Python using diverse libraries</span>
+            </div>
+          </a>
+          <a 
+            href="https://github.com/CreoHwan" 
+            class="project"
+            target="blank"
+            data-type="business"
+          >
+            <img class="project__img" src="./imgs/projects/Deep.png" alt="crawling">
+            <div class="project__description">
+              <h3>Deep Learning</h3>
+              <span>The survival rate of lung cancer surgery patients using TensorFlow</span>
+            </div>
+          </a>
+          <!-- Writer part -->
+          <a 
+            href="https://www.instagram.com/p/CXVxg_ml-pz/" 
+            class="project"
+            target="blank"
+            data-type="writer"
+          >
+            <img class="project__img" src="./imgs/projects/poem4-1.jpg" alt="mobile">
+            <div class="project__description">
+              <h3>알츠하이머의 꿈</h3>
+              <span>4th</span>
+            </div>
+          </a>      
+          <a 
+            href="https://www.instagram.com/p/CQgSPomAHlx/" 
+            class="project"
+            target="blank"
+            data-type="writer"
+          >
+            <img class="project__img" src="./imgs/projects/poem3.jpg" alt="mobile">
+            <div class="project__description">
+              <h3>달무리</h3>
+              <span>3rd</span>
+            </div>
+          </a>  
+          <a 
+            href="https://www.instagram.com/p/CL0VjDlAVEI/" 
+            class="project"
+            target="blank"
+            data-type="writer"
+          >
+            <img class="project__img" src="./imgs/projects/poem2.jpg" alt="mobile">
+            <div class="project__description">
+              <h3>뫼비우스의 띠</h3>
+              <span>2nd</span>
+            </div>
+          </a>
+          <a 
+            href="https://www.instagram.com/p/CK79zNzAvPl/" 
+            class="project"
+            target="blank"
+            data-type="writer"
+          >
+            <img class="project__img" src="./imgs/projects/poem1.jpg" alt="mobile">
+            <div class="project__description">
+              <h3>눈망울</h3>
+              <span>1st</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-        </section>
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <h1>Testimonials</h1>
+      <h2>Click each paragraph and see full reference.</br> ( If you want to know details about people, click each avatar image )</h2>
 
-        <!-- Contact -->
-        <section id="contact" class="section">
-            <h1 class="contact__title">Let's talk</h1>
-            <h2 class="contact__email">junghwan3588@gm.gist.ac.kr</h2>
-            <div class="contact__links">
-                <a href="https://github.com/CreoHwan" target="_blank">
-                    <i class="fab fa-github"></i>
+      <div class="section__container">
+        <div class="testimonials">
+          <div class="testimonial">
+            <button>                
+              <a href="https://language.gist.ac.kr/" target="blank">
+                <img src="imgs/projects/Bae.png" alt="People" class="testimonial__avatar">
+              </a>
+            </button>
+            <div class="testimonial__speack-bubble">
+              <button>                
+                <a href="https://drive.google.com/file/d/1lqogJIvCGBNgBIhGVPvBvXVGLP1JkDag/view?usp=sharing" target="blank">
+                  <p>... This shows JungHwan’s reflective nature and his ability to adapt as a situation changes. Thisof deep thinkingwasin evidence many times during our conversations, when JungHwan would hit right tcore of a complex issue...
+                  </p>
+                  <p class="name" ><a href="https://drive.google.com/file/d1lqogJIvCGBNgBIhGVPvBvXVGLP1JkDagusp=sharing"target="blank">Prof. Bae</a> / Language Education Center at GIST</p>
                 </a>
-                <a href="https://www.instagram.com/creohwan/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <p class="contact__rights">
-                    2021 Creohwan - All rights reserved
-                </p>
-
+              </button>
+              
             </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__speack-bubble">
+              <button>
+                <a href="https://drive.google.com/file/d/1xjXCL92f8DAZAe03mGHbfJuYdqxOj8tv/view?usp=sharing" target="blank">
+                  <p>... 본인에게 무엇이 부족하고 필요한지를 판단하는 통찰력과 스스로 헤쳐나가는 능력, 어떤 분야든지 두려워도전적이고 끈기 있게공부하는 능력을 갖춘 이정환 학생은 ...</p>
+                  <p class="name"><a href="https://drive.google.com/file/d/1xjXCL92f8DAZAe03mGHbfJuYdqxOj8tvusp=sharing"target="blank">Prof. Kim</a> / Software Education Center at GIST</p>
+                </a>
+              </button>
+            </div>
+            <button>                
+              <a href="https://software.gist.ac.kr/software/sub01_04.do" target="blank">
+                <img src="imgs/testimonials/avatar.jpg" alt="People" class="testimonial__avatar">
+              </a>
+            </button>
+          </div>
+          <div class="testimonial">
+            <button>                
+              <a href="https://drive.google.com/file/d/1lqogJIvCGBNgBIhGVPvBvXVGLP1JkDag/view?usp=sharing" target="blank">
+                <img src="imgs/projects/kang.png" alt="People" class="testimonial__avatar">
+              </a>
+            </button>
+            <div class="testimonial__speack-bubble">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius dicta vitae porro fugit dolor facilis Repudiandae obcaecati laudantium sed veniam suscipit. Harum deleniti fugit tempore accusantium minimrecusandae? ~</p>
+              <p class="name"><a href="https://software.gist.ac.kr/software/sub01_04.do">Prof. Kang</a> / Mathmetics Minor in GIST</p>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__speack-bubble">
+              <p>GIST English Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid temporibus necessitatibusdistinctio omnis cumque. Assumenda, culpa harum fuga sed neque magni eius nulla atque, voluptates vitaeofficia velit? ~</p>
+              <p class="name"><a href="">Mr. Kim</a> / Major in military</p>
+            </div>
+            <button>                
+              <a href="https://drive.google.com/file/d/1lqogJIvCGBNgBIhGVPvBvXVGLP1JkDag/view?usp=sharing" target="blank">
+                <img src="imgs/testimonials/avatar.jpg" alt="People" class="testimonial__avatar">
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email">junghwan3588@gm.gist.ac.kr</h2>
+      <div class="contact__links">
+        <a href="https://github.com/CreoHwan" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/creohwan/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+          <p class="contact__rights">
+            2021 Creohwan - All rights reserved
+          </p>
+      </div>
+    </section>
 
-
-
-        </section>
-
-        <!-- Arrow up -->
-        <button class="arrow-up">
-            <i class="fas fa-arrow-up"></i>
-
-        </button>
-    </body>
+    <!-- Arrow up -->
+      <button class="arrow-up">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+  </body>
 </html>
