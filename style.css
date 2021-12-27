@@ -18,8 +18,8 @@
     /* Font size */
     --font-large: 48px;
     --font-medium: 30px;
-    --font-regular: 18px;
-    --font-small: 16px;
+    --font-regular: 22px;
+    --font-small: 19px;
     --font-micro: 14px;
 
     /* Font weight */
@@ -299,26 +299,33 @@ p {
     display: flex;
     background-color: var(--color-light-grey);
     color: var(--color-light-white);
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .skillset__title {
     color: var(--color-white);
+    font-size: var(--font-medium);
+    margin: 0 0;
 
 }
 
 .skillset__left {
-    flex-basis: 100%;
-    width: 50%;
+    flex-basis: 60%;
     background-color: var(--color-dark-grey);
     padding: 20px 40px;
 }
 
-/*  
+.experience__lsit, .etc__list{
+  font-size: var(--font-regular);
+  text-align: left;
+}
+.skill_text {
+  display: inline-block;
+}
 .skillset__right{
     flex-basis: 40%;
 }
-*/
+
 
 .experience {
     background-color: var(--color-grey);
@@ -347,8 +354,9 @@ p {
 }
 
 .experience, .etc {
-    padding: 20px;
+  padding: 20px;
 }
+
 
 /* Work */
 #work {
@@ -650,11 +658,11 @@ p {
     .major {
         margin-bottom: 30px;
     }
-    /*  
+    
     .skillset {
         flex-direction: column;
     }
-    */
+    
 
     .category__btn {
         margin: 4px 0;

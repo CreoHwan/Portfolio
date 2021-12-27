@@ -97,7 +97,7 @@ function scrollIntoView(selector) {
 }
 
 // Typing effect
-const content = "            Space, Literature, and Deveolpment            ";
+const content = "Space, Literature, Deveolpment, and Data Science";
 
 const text1 = document.querySelector('.home__description');
 const text2 = document.querySelector('.home__description');
