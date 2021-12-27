@@ -308,14 +308,17 @@ p {
 }
 
 .skillset__left {
-    flex-basis: 60%;
+    flex-basis: 100%;
+    width: 50%;
     background-color: var(--color-dark-grey);
     padding: 20px 40px;
 }
 
+/*  
 .skillset__right{
     flex-basis: 40%;
 }
+*/
 
 .experience {
     background-color: var(--color-grey);
@@ -328,6 +331,7 @@ p {
 .skill__description {
     display: flex;
     justify-content: space-between;
+    font-size: var(--font-medium);
 }
 
 .skill__bar {
@@ -646,10 +650,11 @@ p {
     .major {
         margin-bottom: 30px;
     }
-
+    /*  
     .skillset {
         flex-direction: column;
     }
+    */
 
     .category__btn {
         margin: 4px 0;
