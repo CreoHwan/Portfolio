@@ -17,7 +17,7 @@
 
     /* Font size */
     --font-large: 48px;
-    --font-medium: 28px;
+    --font-medium: 30px;
     --font-regular: 18px;
     --font-small: 16px;
     --font-micro: 14px;
@@ -262,7 +262,7 @@ p {
 }
 
 .major__description{
-    font-size: var(--font-small);
+    font-size: var(--font-regular );
 }
 
 .job {
@@ -282,11 +282,11 @@ p {
 }
 
 .job__name {
-    font-size: var(--font-small);
+    font-size: var(--font-medium);
 }
 
 .job__period {
-    font-size: var(--font-micro);
+    font-size: var(--font-regular);
 }
 
 /* Skills */
@@ -504,7 +504,7 @@ p {
 
 .testimonial__speack-bubble p {
     color: var(--color-black);
-    font-size: 22px;
+    font-size: var(--font-medium);
     
 }
 
@@ -683,6 +683,13 @@ p {
     .testimonial__speack-bubble {
         order: 1;
     }
+
+    .testimonial__speack-bubble p {
+      color: var(--color-black);
+      font-size: var(--font-regular);
+      
+    }
+  
 
     .arrow-up {
         width:45px;
