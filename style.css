@@ -312,16 +312,18 @@ p {
 .skillset__left {
     flex-basis: 60%;
     background-color: var(--color-dark-grey);
-    padding: 20px 40px;
+    
 }
 
 .experience__lsit, .etc__list{
   font-size: var(--font-regular);
   text-align: left;
 }
+/*  
 .skill_text {
   display: inline-block;
 }
+*/
 .skillset__right{
     flex-basis: 40%;
 }
@@ -355,6 +357,14 @@ p {
 
 .experience, .etc {
   padding: 20px;
+}
+
+.programming {
+  padding: 20px 40px;
+}
+.language {
+  background-color: #312f36 ;
+  padding: 20px 40px;
 }
 
 
