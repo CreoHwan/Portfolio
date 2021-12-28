@@ -91,13 +91,17 @@ workBtnContainer.addEventListener('click', (e) => {
 
 });
 
+
+
+
+
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: 'smooth'})
 }
 
 // Typing effect
-const content = "Space, Literature, Deveolpment, and Data Science";
+const content = "Space, Literature, Development, and Data Science";
 
 const text1 = document.querySelector('.home__description');
 const text2 = document.querySelector('.home__description');

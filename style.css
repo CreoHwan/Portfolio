@@ -319,11 +319,11 @@ p {
   font-size: var(--font-regular);
   text-align: left;
 }
-/*  
+
 .skill_text {
   display: inline-block;
 }
-*/
+
 .skillset__right{
     flex-basis: 40%;
 }
@@ -440,6 +440,7 @@ p {
     display: none;
 }
 
+
 .project__img {
     max-width: 100%;
     max-height: 100%;
@@ -502,6 +503,11 @@ p {
     height: 150px;
     border-radius: 50%;
     margin: 12px;
+    padding: 10px 10px;
+}
+
+.testimonial__avatar.ok:hover{
+  background-color: var(--color-pink);
 }
 
 .testimonial__avatar:nth-child(odd) {
@@ -519,6 +525,14 @@ p {
     border-radius: var(--size-border-radius);
     
 }
+
+.testimonial__speack-bubble.ok:hover {
+
+  background-color: var(--color-dark-white);
+  
+}
+
+
 
 .testimonial__speack-bubble p {
     color: var(--color-black);
