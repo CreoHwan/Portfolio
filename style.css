@@ -518,6 +518,9 @@ p {
     margin-left: 40px;
 }
 
+.namecol {
+  color: var(--color-pink);
+}
 
 .testimonial__speack-bubble {
     padding: 18px;
